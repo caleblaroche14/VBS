@@ -7,34 +7,35 @@
     <title>Vermont Boundary Service</title>
 </head>
 <body>
-    <div class="topholder">
-        <div class="logoHolder"><img class="logo" src="images/vbs_logo2_transparentbg.png" /></div>
-        <nav class="navbar">
-            <a class="navbutton" href="index.html"  ><h1>Home</h1></a>
-            <a class="navbutton" href="pricing.html"><h1>Pricing</h1></a>
-        </nav>
-    </div>
     <div class="mainbody">
-        <div class="bodycard" id="card1">
+        <div class="topholder">
+            <div class="logoHolder"><img class="logo" src="images/vbs_logo2_transparentbg.png" /></div>
+            <nav class="navbar">
+                <a class="navbutton" href="index.html"  ><h1>Home</h1></a>
+                <a class="navbutton" href="pricing.html"><h1>Pricing</h1></a>
+            </nav>
+        </div>
+        <div class="bodycard" id="card1" onclick="toggleCardHeight(1)">
             <div class="bodycardheader">Why Post Your Land?</div>
-            <div class="bodycardtextholder">
+            <div class="bodycardtextholder" id="cardtextholder1">
                 <div class="bodycardtext">Vermont is home to tens of thousands of men and women who engage in hunting and other outdoor recreational activities throughout all times of the year. On most occasions, these people are carrying rifles and shotguns with the intent of tagging a deer or a bear. While hunting is statistically a safe activity, there are many examples of life-altering hunting accidents taking place in Vermont. </div>
             </div>
         </div>
-        <div class="bodycard" id="card2">
+        <div class="bodycard" id="card2" onclick="toggleCardHeight(2)">
             <div class="bodycardheader">Why Vermont Boundary Services?</div>
-            <div class="bodycardtextholder">
+            <div class="bodycardtextholder" id="cardtextholder2">
                 <div class="bodycardtext">The State of Vermont has specific requirements for land to be considered legally enclosed (posted) to allow for enforcement of the posted land law. If your land is not posted exactly within the standards laid out under the law, it is both ineffective and unenforceable. </div>
             </div>
         </div>
-        <div class="bodycard" id="card3">
+        <div class="bodycard" id="card3" onclick="toggleCardHeight(3)">
             <div class="bodycardheader">What Do I Get?</div>
-            <div class="bodycardtextholder">
+            <div class="bodycardtextholder" id="cardtextholder3">
                 <div class="bodycardtext">As a customer of Vermont Boundary Services, you will receive a high level of support throughout the entirety of the service process. At the conclusion of service, your land will be legally enclosed in accordance with Vermont law and you will be provided with professional documentation detailing the service that was completed. </div>
             </div>
         </div>
-        <div class="bodycard" style="height: 100px;"></div>
     </div>
     <a href="quote.html"><div class="request">Request a Quote</div></a>
+
+    <script src="index.js"></script>
 </body>
 </html>
